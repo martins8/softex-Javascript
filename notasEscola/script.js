@@ -14,3 +14,13 @@ function analisarSituacao() {
     document.getElementById('situacao').innerHTML = "Sua situação acadêmica: "+situacao;
     document.getElementById('media').innerHTML = "Sua média: "+media;
 }
+
+var nota_1;
+var nota_2;
+var nota_necessaria;
+function analisarNotaNecessaria() {
+    nota_1 = parseFloat(document.getElementById('nota_1').value);
+    nota_2 = parseFloat(document.getElementById('nota_2').value);
+    nota_necessaria =  21 - (nota_1+nota_2);
+    document.getElementById('nota_necessaria').innerHTML = "Nota necessária: "+nota_necessaria;
+}
