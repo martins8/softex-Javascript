@@ -3,13 +3,13 @@ const readlineSync = require('readline-sync');
 
 function calcular(x, y, z) {
     let resultado;
-    if (operador == "+") {
+    if (y == "+") {
         resultado = x + z; 
-     } else if (operador == "-") {
+     } else if (y == "-") {
          resultado = x - z;
-     } else if (operador =="*") {
+     } else if (y =="*") {
          resultado = x * z;
-     } else if (operador == "/") {
+     } else if (y == "/") {
          resultado = x / z
      }
     return 'O resultado de: '+x+y+z+' = '+resultado
